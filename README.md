@@ -5,7 +5,9 @@
 
 Download Google pre-trained model https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit
 
+
 Put the downloaded file in ./model
+
 
 
 
