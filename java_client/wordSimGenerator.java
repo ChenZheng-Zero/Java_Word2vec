@@ -9,8 +9,7 @@ public class wordSimGenerator{
 
     public static double getSimilarity(String word1, String word2){ 
         double similarityScore = 0.0;
-        try{  
-            System.out.println("start");  
+        try{   
             Process pr = Runtime.getRuntime().exec("python ../word2vec_client.py " + 
                                                     word1 + " " +word2);  
             BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));  
@@ -22,7 +21,6 @@ public class wordSimGenerator{
             }  
             in.close();  
             pr.waitFor();  
-            System.out.println("end"); 
             similarityScore = Double.parseDouble(result);
         } catch (Exception e){  
             e.printStackTrace();  
